@@ -63,8 +63,8 @@ public class searchActivity extends AppCompatActivity {
                                     //textviewDisplay.setText(quran.QuranArabicText[quran.SSP[surahnum - 1] + ayaNumber - 1]);
                                     Intent intent = new Intent(searchActivity.this,SurahDisplay.class);
 
-                                    intent.putExtra("keynumber",quran.QuranArabicText[quran.SSP[surahnum - 1] + ayaNumber - 1] );
-                                    intent.putExtra("keyindex",(quran.SSP[surahnum - 1] + ayaNumber - 1));
+                                    intent.putExtra("keynumber", quran.QuranArabicText[quran.SSP[surahnum - 1] + ayaNumber - 1] );
+                                    intent.putExtra("keyindex",Integer.toString(quran.SSP[surahnum - 1] + ayaNumber - 1));
                                     startActivity(intent);
 
                                 }
